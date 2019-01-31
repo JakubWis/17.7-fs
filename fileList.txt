@@ -1,8 +1,9 @@
+.git
 .gitignore
- fileList.txt
- node_modules
- cat.jpg
- index.js
- package.json
- package-lock.json
- tekst.txt
+cat.jpg
+fileList.txt
+index.js
+node_modules
+package-lock.json
+package.json
+tekst.txt

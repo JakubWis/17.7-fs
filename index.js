@@ -24,10 +24,7 @@ fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
 //catalog file list into file
 function createCatalogListFile (){
     fs.readdir('./', function(err, files) {
-        fs.writeFile('./fileList.txt', files[0],  function(err) {if (err) throw err;})
-        for (var i=1; i<files.length; i++) {
-          fs.appendFile('./fileList.txt', "\n "+files[i],  function(err) {if (err) throw err;})  
-    }
+        fs.writeFile('./fileList.txt', files.join('\n'),  function(err) {if (err) throw err;})
     })
 };
 
